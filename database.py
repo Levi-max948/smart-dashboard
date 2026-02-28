@@ -2,8 +2,8 @@ import mysql.connector
 
 def connect_db():
     return mysql.connector.connect(
-        host = 'localhost',
+        host = 'mysql.railway.internal',
         user = 'root',
-        password = 'king1manish',
-        database = 'smart_dashboard'
+        password = 'AXeQsChaHQLKOULWqFktPdYGArdBRnwc',
+        database = 'railway'
     )
