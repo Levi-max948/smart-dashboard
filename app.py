@@ -12,10 +12,10 @@ st.set_page_config(layout="wide", page_title="Smart AI Dashboard")
 # ================= DATABASE =================
 def connect_db():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="king1manish",
-        database="smart_dashboard"
+        host = 'mysql.railway.internal',
+        user = 'root',
+        password = 'AXeQsChaHQLKOULWqFktPdYGArdBRnwc',
+        database = 'railway'
     )
 
 # ================= AUTH =================
@@ -170,4 +170,5 @@ if st.session_state.logged_in:
         st.divider()
 
         st.subheader("📄 Data Preview (First 100 Rows)")
+
         st.dataframe(df.head(100), use_container_width=True)
